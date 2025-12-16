@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/ada/Documents/programming/C/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+NAME	parents.c	/^#define NAME /;"	d	file:
+child1	parents.c	/^pid_t parent1, num1, num2, child1, child2;$/;"	v	typeref:typename:pid_t
+child2	parents.c	/^pid_t parent1, num1, num2, child1, child2;$/;"	v	typeref:typename:pid_t
+fun1	parents.c	/^void fun1(void){$/;"	f	typeref:typename:void
+fun2	parents.c	/^void fun2(void){$/;"	f	typeref:typename:void
+funchild1	parents.c	/^void funchild1(void){$/;"	f	typeref:typename:void
+funchild2	parents.c	/^void funchild2(void){$/;"	f	typeref:typename:void
+main	parents.c	/^int main(void){$/;"	f	typeref:typename:int
+num1	parents.c	/^pid_t parent1, num1, num2, child1, child2;$/;"	v	typeref:typename:pid_t
+num2	parents.c	/^pid_t parent1, num1, num2, child1, child2;$/;"	v	typeref:typename:pid_t
+parent1	parents.c	/^pid_t parent1, num1, num2, child1, child2;$/;"	v	typeref:typename:pid_t
