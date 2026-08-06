@@ -1,0 +1,20 @@
+void prepare(){
+	int opt = 1;
+	setsockopt(sfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
+
+	/* sin_* is supposed to mean socket internet address */
+	server.sin_family = AF_INET;
+	server.sin_port = htons(port);
+
+	if (inet_pton(AF_INET, addr, &server.sin_addr) != 1) /* converting ipv4 to binary that tcp can work with */
+		leave("inet_pton", sfd);		
+
+	if (bind(sfd, (struct sockaddr *)&server, sizeof(server)) == -1) /* binding our socket to an address */
+		leave("bind", sfd);
+
+	if (listen(sfd, 10) == -1)
+		leave("listen", sfd);
+
+	printf("Listening on %s:%u\n", addr, port);
+}
+
